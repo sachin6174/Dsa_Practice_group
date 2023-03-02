@@ -2,11 +2,18 @@ import java.util.Scanner;
 
 public class LcmHcf {
     public static int hcf(int a, int b){
-        if(b % a == 0){
-            return a;
-        }
+        //another way
+        // if(b % a == 0){
+        //     return a;
+        // }
 
-        return hcf(b % a, a);
+        // return hcf(b % a, a);
+        while(a != 0){
+            int temp = a;
+            a = b % a;
+            b = temp;
+        }
+        return b;
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

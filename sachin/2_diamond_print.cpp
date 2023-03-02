@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -34,6 +35,7 @@ int main()
             space2++;
             star2 -= 2;
         }
+        space_1--; //decreade by 1
 
         cout<<endl;
     }
