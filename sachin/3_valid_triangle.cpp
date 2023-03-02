@@ -11,18 +11,29 @@ using namespace std;
 int main(){
     int a,b,c;
     cin>>a>>b>>c;
+    vector<int>sot;
+    sot.push_back(a);
+    sot.push_back(b);
+    sot.push_back(c);
+    sort(sot.begin(),sot.end());
 
-    int maxi= max(a,max(b,c));
-    int mini= min(a,min(b,c));
-    int middle=
+    cout<<endl;
+    for(int item : sot){
+        cout<<item<<" ";
+    }
+    cout<<endl;
 
     if(a+b>c && b+c>a && c+a>b){
-        if(a*a+b*b==c*c){
+        if (sot[0] * sot[0] + sot[1] * sot[1] == sot[2] * sot[2])
+        {
             cout<<"right";
         }
-        else if (a * a + b * b > c * c){   
+        else if (sot[0] * sot[0] + sot[1] * sot[1] > sot[2] * sot[2])
+        {
             cout<<"acute";
-        }else{
+        }
+        else
+        {
             cout<<"obtuse";
         }
     }else{
