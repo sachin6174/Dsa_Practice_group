@@ -6,14 +6,25 @@ int main(){
     int n=sizeof(a)/sizeof(int);
 
     int maxi=a[0];
-    for(int i=0;i<n;i++){
-        if(a[i]>maxi){
-            maxi=a[i];
-        }
-    }
-    
-    for(int i=0;i<n;i++){
 
+    for(int i=0;i<n;i++){
+        maxi=max(maxi,a[i]);
+    }
+
+    int maxi_copy=maxi;// as i am going to decrease thats why using copy of data
+
+    for(int i=1; i<=maxi;i++){
+        for(int j=0;j<n;j++){
+
+            if(maxi_copy == a[j]){
+                cout<<"*";
+                a[j]--;
+            }else{
+                cout<<" ";
+            }
+            
+        }
+        maxi_copy--;
         cout<<endl;
     }
 

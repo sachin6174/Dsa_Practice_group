@@ -1,1 +1,2 @@
- space2++;
+
+    if(mini<0){
