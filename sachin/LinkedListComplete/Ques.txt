@@ -11,7 +11,8 @@ print LinkedList
 linked list input
 insert node at ith position
 delete node at ith position
-
+alternate print 1, 3  ..
+and 2...4
 
 
 find a node in linked list

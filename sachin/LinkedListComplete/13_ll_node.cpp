@@ -1,29 +1,34 @@
 #include<bits/stdc++.h>
 using namespace std;
-/*
-1 2 3 4 5 6 7 8 9 -1
-*/
-template<class p>
-class linked_list_node{
-    public:
-    p data;
-    linked_list_node* next_address;
 
-    linked_list_node(p data){
-        this->data=data;
-        this->next_address=NULL;
-    }
+template <class p> class LinkedListNode{
+    public:
+        p data;
+        LinkedListNode* next_address;
+
+        LinkedListNode(p data){
+            this->data=data;
+            this->next_address=NULL;
+        }
 };
 
-linked_list_node<int>* ll_input(){
+
+/*********************************************Linked List Iterative***************************************************/
+// convention :
+// camelcase for functions
+// pascal case for Class
+// snake case for normal variables
+
+
+// take input linked list
+LinkedListNode<int>* inputOfLinkedListI(){
     int data;
     cin>>data;
-    linked_list_node<int> * head=NULL;
-    linked_list_node<int>* tail=NULL;
+    LinkedListNode<int> * head=NULL;
+    LinkedListNode<int>* tail=NULL;
 
     while (data != -1){
-        
-        linked_list_node<int>* current_node =new linked_list_node<int>(data);
+        LinkedListNode<int>* current_node =new LinkedListNode<int>(data);
         if(head==NULL){
             head =current_node;
             tail =current_node;
@@ -37,10 +42,11 @@ linked_list_node<int>* ll_input(){
     return head;
 }
 
-void ll_print(linked_list_node<int>*head)
-{
+
+//print the linked list
+void printOfLinkedListI(LinkedListNode<int>*head){
     // here we lost head -> so make sure that save a copy of head in ll
-    linked_list_node<int> *head_copy = head;
+    LinkedListNode<int> *head_copy = head;
     while(head!=NULL){
         cout<< head->data<<" ";
         head=head->next_address;
@@ -50,15 +56,13 @@ void ll_print(linked_list_node<int>*head)
 
 
 //print leave pattern
-void print_alternate(linked_list_node<int>*head){
+void printLeaveAlternateI(LinkedListNode<int>*head){
     while(head !=NULL){
         cout<<head->data<< " ";
-        if (head->next_address != NULL && head->next_address->next_address != NULL)
-        {
+        if (head->next_address != NULL && head->next_address->next_address != NULL){
             head=head->next_address->next_address;
         }
-        else
-        {
+        else{
             break;
         }
     }
@@ -66,80 +70,141 @@ void print_alternate(linked_list_node<int>*head){
 }
 
 
-// leave print
-void print_alternate2(linked_list_node<int> *head){
+// leave print pattern
+void leavePrintAlternateI(LinkedListNode<int> *head){
     if(head!=NULL){
         head=head->next_address;
     }
-    print_alternate(head);
+    printLeaveAlternateI(head);
+    cout<<endl;
 }
 
+LinkedListNode<int> *reverseOfLinkedListI(LinkedListNode<int> *head){
+
+    if(head==NULL){
+        return NULL;
+    }
+    stack<LinkedListNode<int> *> address;
+    while(head!=NULL){
+        address.push(head->next_address);
+        head=head->next_address;
+    }
+
+    LinkedListNode<int> *ans = address.top();
+    LinkedListNode<int> *ans_temp = address.top();
+    address.pop();
+
+    while(address.size()>=0){
+        ans_temp->next_address=address.top();
+        address.pop();
+
+    }
+    ans_temp->next_address=NULL;
+    return ans;
+}
 
 
 /*********************************************Linked List Recursion***************************************************/
-//convention -> camelcase for functions
-//pascal case for objects
+// convention :
+// camelcase for functions
+// pascal case for Class
+// snake case for normal variables
+
+
+// take input linked list
+LinkedListNode<int> *inputOfLinkedListR(){
+
+}
+
+// print the linked list
+void printOfLinkedListR(LinkedListNode<int>*head){
+
+}
 
 
 
-int lengthOfLinkedList(linked_list_node<int> *head ){
+
+
+int lengthOfLinkedListR(LinkedListNode<int> *head ){
     if(head==NULL){
         return 0;
     }
-    return 1+ lengthOfLinkedList(head->next_address);
+    return 1+ lengthOfLinkedListR(head->next_address);
 }
 
+
 // will reverse original linked list
-linked_list_node<int> *reverseOfLinkedList(linked_list_node<int> *head, linked_list_node<int>*  &ans_head)
-{
+LinkedListNode<int> *reverseOfLinkedListR(LinkedListNode<int> *head, LinkedListNode<int>*  &ans_head){
     if (head == NULL){
         return head;
     }
     if(head->next_address==NULL){
         ans_head=head;
-        cout << "last " << ans_head<<endl;
         return head; 
     }
-    linked_list_node<int>* current =head;
-    linked_list_node<int>* next= head->next_address;
+    LinkedListNode<int>* current =head;
+    LinkedListNode<int>* next= head->next_address;
     head->next_address = NULL;
-    cout<<"UP->   calling "<<" current "<<current<<" next "<<next<<endl;
-    linked_list_node<int> *ans = reverseOfLinkedList(next, ans_head);
+    LinkedListNode<int> *ans = reverseOfLinkedListR(next, ans_head);
     ans->next_address=current;
-    cout << "DN->   calling "<< " current " << current << " next " << next << endl;
     return current;
 }
-linked_list_node<int> *reverseOfLinkedList(linked_list_node<int> *head){
-    linked_list_node<int> * ans_head=NULL;
-    reverseOfLinkedList(head, ans_head);
+LinkedListNode<int> *reverseOfLinkedListR(LinkedListNode<int> *head){
+    LinkedListNode<int> * ans_head=NULL;
+    reverseOfLinkedListR(head, ans_head);
     return ans_head;
 }
 
 
 
 
+
+void reversePrintOfLinkedListR(LinkedListNode<int> *head){
+    if(head == NULL){
+        return;
+    }
+    reversePrintOfLinkedListR(head->next_address);
+    cout<<head->data<<" ";
+}
+
+/*********************************************Driver Code***************************************************/
+// convention :
+// camelcase for functions
+// pascal case for Class
+// snake case for normal variables
+
+
 int main(){
 
-    // linked_list_node<int> node1(1);
-    // linked_list_node<int>* head =&node1;
-    // linked_list_node<int> node2(2);
+    // hard making of linked list
+    // LinkedListNode<int> node1(1);
+    // LinkedListNode<int>* head =&node1;
+    // LinkedListNode<int> node2(2);
     // node1.next_address =&node2;
-    // linked_list_node<int> node3(3);
+    // LinkedListNode<int> node3(3);
     // node2.next_address =&node3;
 
-    cout << "Linke" << endl;
-    linked_list_node<int> *head = ll_input();
+    cout<<"LinkedList input:"<< endl;
+    LinkedListNode<int> *head = inputOfLinkedListI();
+    cout << endl<< endl;
 
-    ll_print(head);
-    print_alternate(head);
-    print_alternate2(head);
+    cout << "linked list printed:" << endl;
+    printOfLinkedListI(head);
+    cout<<endl<<endl;
 
-    cout << endl;
-    cout << "lengthOfLinkedList:" << endl;
-    cout << lengthOfLinkedList(head);
-    cout << endl;
+    cout << "print leave pattern:" << endl;
+    printLeaveAlternateI(head);
+    cout<<endl<<endl;
 
-    
-    ll_print(reverseOfLinkedList(head));
-    cout<<endl;
+    cout << "leave print pattern:" << endl;
+    leavePrintAlternateI(head);
+    cout<<endl<<endl;
+
+    cout << "length Of LinkedList:" << endl;
+    cout << lengthOfLinkedListR(head);
+    cout << endl<<endl;
+
+    cout << "Linked list reversed:" << endl;
+    printOfLinkedListI(reverseOfLinkedListI(head));
+    cout<<endl<<endl;
 }
