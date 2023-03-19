@@ -1,2 +1,1 @@
-
-    if(mini<0){
+next_address->next_address;

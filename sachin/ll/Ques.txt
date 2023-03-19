@@ -1,0 +1,43 @@
+iterative and recursive:
+// AND HANDLE ALL EDGE CAESES
+// tell techniques to pass test cases if not getting sol(using print)
+
+do with
+         singly linked list , 2 way linked list
+        singly circular LinkedList and two way doubly linked list
+
+create LinkedList node 
+print LinkedList
+linked list input
+insert node at ith position
+delete node at ith position
+
+
+
+find a node in linked list
+APPEND LAST N nodes TO FIRST
+eleiminate duplicates from LinkedList
+print reverse linked list
+if linked list pelindromic
+
+remove continuous duplicates from LinkedList
+even elements and then odd elements in LinkedList
+delete every nth node in LinkedLis
+swap two nodes in linked list
+reverese every kth element in linked list (k reverse):
+Sample Input 1 :
+1
+1 2 3 4 5 6 7 8 9 10 -1
+4
+Sample Output 1 :
+4 3 2 1 8 7 6 5 10 9
+
+bubblesort LinkedLis
+find mid point of LinkedList
+merge two sorted linked list
+do merge sort on linked list
+reverse linked list
+
+Do all in iterative as well as recursive if possible
+and finally builtin ll
+and do question and different platforms
