@@ -1,3 +1,21 @@
-git checkout sachin
-git checkout bunty
-git checkout alok
+LINKS FOR LEARNING THE MARKDOWN LANG:
+
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+https://www.mygreatlearning.com/blog/readme-file/
+
+
+LEARNING A NEW MARKUP LANG IS LITERALLY BOARING AS WE KNOW HOW HTML BOARD US SO WE WILL USE MARKDOWN EDITORD WILL WILL GENERATE THE CODE :
+https://readme.so/editor
+
+
+SOME BASICS MARKDOWN COMMANDS:
+
+# A first-level heading
+## A second-level heading
+### A third-level heading
+
+**This is bold text**
+*This text is italicized*
+~~This was mistaken text~~
+**This text is _extremely_ important**
