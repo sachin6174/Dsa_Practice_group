@@ -86,7 +86,7 @@ LinkedListNode<int> *reverseOfLinkedListI(LinkedListNode<int> *head){
     }
     stack<LinkedListNode<int> *> address;
     while(head!=NULL){
-        address.push(head->next_address);
+        address.push(head);
         head=head->next_address;
     }
 
@@ -96,8 +96,8 @@ LinkedListNode<int> *reverseOfLinkedListI(LinkedListNode<int> *head){
 
     while(address.size()>=0){
         ans_temp->next_address=address.top();
+        ans_temp = address.top();
         address.pop();
-
     }
     ans_temp->next_address=NULL;
     return ans;
@@ -113,12 +113,12 @@ LinkedListNode<int> *reverseOfLinkedListI(LinkedListNode<int> *head){
 
 // take input linked list
 LinkedListNode<int> *inputOfLinkedListR(){
-
+    return NULL;
 }
 
 // print the linked list
 void printOfLinkedListR(LinkedListNode<int>*head){
-
+    return ;
 }
 
 
@@ -154,9 +154,6 @@ LinkedListNode<int> *reverseOfLinkedListR(LinkedListNode<int> *head){
     reverseOfLinkedListR(head, ans_head);
     return ans_head;
 }
-
-
-
 
 
 void reversePrintOfLinkedListR(LinkedListNode<int> *head){
