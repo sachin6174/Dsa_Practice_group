@@ -1,0 +1,3 @@
+// making library for mathematics
+// can be a cli application like the git we can implement like give coordinate in space we will tell u equation of plane like this
+// we an use alot of c++ stuff ->like class ,templates etc

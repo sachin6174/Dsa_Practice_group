@@ -1,0 +1,8 @@
+contains data base
+signup and sign in page
+(also use fb or google api for login etc)
+break in microservice
+save history of play
+takes log for machine learing work
+recommend songs
+//musicing app

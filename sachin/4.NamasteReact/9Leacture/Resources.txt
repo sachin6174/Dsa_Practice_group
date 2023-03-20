@@ -1,0 +1,3 @@
+Cors-> https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf/related?hl=en
+use effect revision
+    initial render-> use effect called -> rerendered basd on devendency

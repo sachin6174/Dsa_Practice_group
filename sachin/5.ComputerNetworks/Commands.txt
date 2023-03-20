@@ -1,0 +1,2 @@
+ping command:
+    ping google.com (it sends icmp(internet control message protocol) packets to the mensioned host and retun the latency between us and the named host in milli seconds)

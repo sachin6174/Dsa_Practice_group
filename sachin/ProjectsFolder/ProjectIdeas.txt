@@ -1,0 +1,11 @@
+Api with authentication
+ranom no generation api
+chat app
+blog and portfolio
+chatbot
+mobile wallet
+bug tracking system
+password generator and manager
+encryption algorithums 
+credit card fraud detection system
+Sql api to do list

@@ -1,4 +1,5 @@
 iterative and recursive:
+// handle start and end position in good way
 // AND HANDLE ALL EDGE CAESES
 // tell techniques to pass test cases if not getting sol(using print)
 

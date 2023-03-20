@@ -55,6 +55,22 @@ void printOfLinkedListI(LinkedListNode<int>*head){
 }
 
 
+//print the linked list GUI
+void printOfLinkedListGUII(LinkedListNode<int>*head){
+    // here we lost head -> so make sure that save a copy of head in ll
+    LinkedListNode<int> *head_copy = head;
+    if(head!=NULL){
+        cout<<"Head"<<"("<<head<<") ->";
+    }
+    
+    while(head!=NULL){
+        cout<<"||"<< head->data<<"-"<<head->next_address<<"||"<< " -> ";
+        head=head->next_address;
+    }
+    cout << endl;
+}
+
+
 //print leave pattern
 void printLeaveAlternateI(LinkedListNode<int>*head){
     while(head !=NULL){
@@ -77,6 +93,49 @@ void leavePrintAlternateI(LinkedListNode<int> *head){
     }
     printLeaveAlternateI(head);
     cout<<endl;
+}
+
+
+//give address of the first  node having given dta
+LinkedListNode<int> *addressOfDataI(LinkedListNode<int> *head, int data){
+
+    while(head!=NULL){
+        if(head->data==data){
+            return head;
+        }
+        head=head->next_address;
+    }
+    return NULL;
+}
+
+//give address of the node at particular index
+LinkedListNode<int> *addressOfIndexI(LinkedListNode<int> *head,int index){
+    //considering index from 0
+    int counter=0;
+    while(head!=NULL){
+        if(counter==index){
+            return head;
+        }
+        head=head->next_address;
+        counter++;
+    }
+    return NULL;
+}
+
+// swap two nodes
+void swapNodesI(LinkedListNode<int>* head,int first_index ,int second_index){
+    // validate indexes
+
+    //here index are valid
+    LinkedListNode<int> *first_node=addressOfIndexI(head,first_index);
+    LinkedListNode<int> *second_node = addressOfIndexI(head,second_index);
+
+    LinkedListNode<int> *first_node_pre = NULL;
+    LinkedListNode<int>* first_node_post=NULL;
+
+    LinkedListNode<int>* second_node_pre=NULL;
+    LinkedListNode<int>* second_node_post=NULL;
+   
 }
 
 LinkedListNode<int> *reverseOfLinkedListI(LinkedListNode<int> *head){
@@ -175,12 +234,15 @@ int main(){
 
     // hard making of linked list
     // LinkedListNode<int> node1(1);
-    // LinkedListNode<int>* head =&node1;
+    // LinkedListNode<int>* head_hardcode =&node1;
     // LinkedListNode<int> node2(2);
     // node1.next_address =&node2;
     // LinkedListNode<int> node3(3);
     // node2.next_address =&node3;
 
+    /*
+    1 2 3 4 5 6 7 -1
+    */
     cout<<"LinkedList input:"<< endl;
     LinkedListNode<int> *head = inputOfLinkedListI();
     cout << endl<< endl;
@@ -189,19 +251,33 @@ int main(){
     printOfLinkedListI(head);
     cout<<endl<<endl;
 
-    cout << "print leave pattern:" << endl;
-    printLeaveAlternateI(head);
+    cout << "linked list GUI printed:" << endl;
+    printOfLinkedListGUII(head);
     cout<<endl<<endl;
 
-    cout << "leave print pattern:" << endl;
-    leavePrintAlternateI(head);
-    cout<<endl<<endl;
+    // cout << "print leave pattern:" << endl;
+    // printLeaveAlternateI(head);
+    // cout<<endl<<endl;
 
-    cout << "length Of LinkedList:" << endl;
-    cout << lengthOfLinkedListR(head);
-    cout << endl<<endl;
+    // cout << "leave print pattern:" << endl;
+    // leavePrintAlternateI(head);
+    // cout<<endl<<endl;
 
-    cout << "Linked list reversed:" << endl;
-    printOfLinkedListI(reverseOfLinkedListI(head));
-    cout<<endl<<endl;
+    // cout << "length Of LinkedList:" << endl;
+    // cout << lengthOfLinkedListR(head);
+    // cout << endl<<endl;
+
+    // cout << "Linked list reversed:" << endl;
+    // printOfLinkedListI(reverseOfLinkedListR(head));
+    // cout<<endl<<endl;
+
+    cout << "address of particular index :" << endl;
+    cout << addressOfIndexI(head,4);
+    cout << endl<< endl;
+
+    cout << "address of particular data :" << endl;
+    cout << addressOfDataI(head,4);
+    cout << endl<< endl;
+
+
 }
