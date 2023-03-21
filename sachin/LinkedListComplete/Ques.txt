@@ -1,4 +1,5 @@
 iterative and recursive:
+//Dont hasitate to use helperfunction in recursion
 // handle start and end position in good way
 // AND HANDLE ALL EDGE CAESES
 // tell techniques to pass test cases if not getting sol(using print)
@@ -42,4 +43,4 @@ reverse linked list
 
 Do all in iterative as well as recursive if possible
 and finally builtin ll
-and do question and different platforms
+and do question on different platforms

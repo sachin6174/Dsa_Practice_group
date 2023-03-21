@@ -6,9 +6,16 @@ template <class p> class LinkedListNode{
         p data;
         LinkedListNode* next_address;
 
+        LinkedListNode(){
+            // default constructor
+        }
         LinkedListNode(p data){
             this->data=data;
             this->next_address=NULL;
+        }
+        LinkedListNode(p data,LinkedListNode<T>*next_address){
+            this->data=data;
+            this->next_address=next_address;
         }
 };
 
@@ -59,9 +66,9 @@ void printOfLinkedListI(LinkedListNode<int>*head){
 void printOfLinkedListGUII(LinkedListNode<int>*head){
     // here we lost head -> so make sure that save a copy of head in ll
     LinkedListNode<int> *head_copy = head;
-    if(head!=NULL){
-        cout<<"Head"<<"("<<head<<") ->";
-    }
+    cout<<"Head"<<"("<<head<<") ->";
+    // NULL WILL BE PRINTED as zero
+
     
     while(head!=NULL){
         cout<<"||"<< head->data<<"-"<<head->next_address<<"||"<< " -> ";
@@ -163,6 +170,24 @@ LinkedListNode<int> *reverseOfLinkedListI(LinkedListNode<int> *head){
 }
 
 
+void deletionOfLastNode(LinkedListNode<int>*head){
+    while(head->next_address!=NULL){
+        head=head->next_address;
+    }
+    delete head;
+}
+
+
+void deletionOfLinkedList(LinkedListNode<int>*head){
+    while(head!=NULL){
+        // LinkedListNode<int> *temp_head;
+        // while(temp_head->next_address!=NULL){
+        //     temp_head=temp_head->next_address;
+        // }
+        // delete temp_head;
+        deletionOfLastNode(head);
+    }
+}
 /*********************************************Linked List Recursion***************************************************/
 // convention :
 // camelcase for functions
@@ -230,54 +255,54 @@ void reversePrintOfLinkedListR(LinkedListNode<int> *head){
 // snake case for normal variables
 
 
-int main(){
+// int main(){
 
-    // hard making of linked list
-    // LinkedListNode<int> node1(1);
-    // LinkedListNode<int>* head_hardcode =&node1;
-    // LinkedListNode<int> node2(2);
-    // node1.next_address =&node2;
-    // LinkedListNode<int> node3(3);
-    // node2.next_address =&node3;
+//     // hard making of linked list
+//     // LinkedListNode<int> node1(1);
+//     // LinkedListNode<int>* head_hardcode =&node1;
+//     // LinkedListNode<int> node2(2);
+//     // node1.next_address =&node2;
+//     // LinkedListNode<int> node3(3);
+//     // node2.next_address =&node3;
 
-    /*
-    1 2 3 4 5 6 7 -1
-    */
-    cout<<"LinkedList input:"<< endl;
-    LinkedListNode<int> *head = inputOfLinkedListI();
-    cout << endl<< endl;
+//     /*
+//     1 2 3 4 5 6 7 -1
+//     */
+//     cout<<"LinkedList input:"<< endl;
+//     LinkedListNode<int> *head = inputOfLinkedListI();
+//     cout << endl<< endl;
 
-    cout << "linked list printed:" << endl;
-    printOfLinkedListI(head);
-    cout<<endl<<endl;
+//     cout << "linked list printed:" << endl;
+//     printOfLinkedListI(head);
+//     cout<<endl<<endl;
 
-    cout << "linked list GUI printed:" << endl;
-    printOfLinkedListGUII(head);
-    cout<<endl<<endl;
+//     cout << "linked list GUI printed:" << endl;
+//     printOfLinkedListGUII(head);
+//     cout<<endl<<endl;
 
-    // cout << "print leave pattern:" << endl;
-    // printLeaveAlternateI(head);
-    // cout<<endl<<endl;
+//     // cout << "print leave pattern:" << endl;
+//     // printLeaveAlternateI(head);
+//     // cout<<endl<<endl;
 
-    // cout << "leave print pattern:" << endl;
-    // leavePrintAlternateI(head);
-    // cout<<endl<<endl;
+//     // cout << "leave print pattern:" << endl;
+//     // leavePrintAlternateI(head);
+//     // cout<<endl<<endl;
 
-    // cout << "length Of LinkedList:" << endl;
-    // cout << lengthOfLinkedListR(head);
-    // cout << endl<<endl;
+//     // cout << "length Of LinkedList:" << endl;
+//     // cout << lengthOfLinkedListR(head);
+//     // cout << endl<<endl;
 
-    // cout << "Linked list reversed:" << endl;
-    // printOfLinkedListI(reverseOfLinkedListR(head));
-    // cout<<endl<<endl;
+//     // cout << "Linked list reversed:" << endl;
+//     // printOfLinkedListI(reverseOfLinkedListR(head));
+//     // cout<<endl<<endl;
 
-    cout << "address of particular index :" << endl;
-    cout << addressOfIndexI(head,4);
-    cout << endl<< endl;
+//     cout << "address of particular index :" << endl;
+//     cout << addressOfIndexI(head,4);
+//     cout << endl<< endl;
 
-    cout << "address of particular data :" << endl;
-    cout << addressOfDataI(head,4);
-    cout << endl<< endl;
+//     cout << "address of particular data :" << endl;
+//     cout << addressOfDataI(head,4);
+//     cout << endl<< endl;
 
 
-}
+// }
