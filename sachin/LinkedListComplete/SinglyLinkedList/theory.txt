@@ -1,0 +1,22 @@
+before this we were having 2 ways to store data>
+variable and array
+variable (for single piece of data)
+Array (to store multiple data of same type) 
+=>size of array is fixed(tell students why in relevence of operating system ,fragmentaion, and indextable alternative of linked list)
+//array has continuous memory sllocation  and the next space after the last element may be used by any other process(no gurrentee of space)
+
+// as to remove elements from array  and addition is also problem 
+so we introduced a new data structure called as linked list or uniary tree.
+
+array->place data at continuous memory loaction and 
+linkd list ->place at random memory loactionin 
+in linked list u can add as much element as needed according to the requirement;
+
+so we need to save all the data address:(created at random locations)
+so one way is to store all the address of all the data put at random location in array
+and the second way is that say each element to store address of next element to it and we can save the address of first element with us 
+
+||data||address_of_next_node ||
+so if we make a normal variable then only data will be stored
+and if we make pointer to save address of address_of_next_node THEN only address will be saved
+so we do not have builtin data type for this so we will make our own data type

@@ -1,19 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-template <class p> class LinkedListNode{
+template <class t> class LinkedListNode{
     public:
-        p data;
-        LinkedListNode* next_address;
+        t data;
+        LinkedListNode *next_address; //(LinkedListNode<t>* next_address;)
 
         LinkedListNode(){
             // default constructor
         }
-        LinkedListNode(p data){
+        LinkedListNode(t data){
             this->data=data;
             this->next_address=NULL;
         }
-        LinkedListNode(p data,LinkedListNode<T>*next_address){
+        LinkedListNode(t data,LinkedListNode<t>*next_address){
             this->data=data;
             this->next_address=next_address;
         }

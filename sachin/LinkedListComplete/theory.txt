@@ -1,6 +1,0 @@
-before this we were having 2 ways to store data>
-variable and array
-variable (for single piece of data)
-Array (to store multiple data of same type) 
-=>size of array is fixed(tell students why in relevence of operating system ,fragmentaion, and indextable alternative of linked list)
-//array has continuous memory sllocation  and the next space after the last element may be used by any other process(no gurrentee of space)
