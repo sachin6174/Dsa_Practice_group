@@ -20,3 +20,10 @@ and the second way is that say each element to store address of next element to 
 so if we make a normal variable then only data will be stored
 and if we make pointer to save address of address_of_next_node THEN only address will be saved
 so we do not have builtin data type for this so we will make our own data type
+
+
+// if int address stored in int datatype pointer then the node address will be stored in node data type pointer
+-> array if fixed in length   tell why to students
+->linked list have size limitation which is limitation of hardware
+make input and print function as static class method
+( we can also do a node class and a linked list class which will have methods and will only have head)

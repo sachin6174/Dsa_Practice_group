@@ -35,7 +35,7 @@ Sample Input 1 :
 Sample Output 1 :
 4 3 2 1 8 7 6 5 10 9
 
-bubblesort LinkedLis
+bubblesort LinkedList
 find mid point of LinkedList
 merge two sorted linked list
 do merge sort on linked list
@@ -44,3 +44,25 @@ reverse linked list
 Do all in iterative as well as recursive if possible
 and finally builtin ll
 and do question on different platforms
+find middle element of linked list using fast and slow pointer concept
+input and print with recursion
+
+
+extras:
+        make input function from 2 parameter constructor
+        node * next; // or node <t>*next ;-> it is implicit no need to write explicitely
+        if we remove default constructor Then we will not be able to create a node without the data
+        singly linked list is uniary tree
+        revise pointer reference etc
+        // -1  will not be value of ll
+        go with vatiation of linked list 
+        // implement a gui print of data structures
+        // implement slow input method of o(n^2)
+         and fast one using head tail method
+         //palindrome of linked list
+         //length of linked list 
+         cout<< NULL will print 0
+         create ll in static memory and heap memory
+         use stl of ll
+        
+

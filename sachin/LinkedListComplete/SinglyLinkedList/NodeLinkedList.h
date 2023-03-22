@@ -16,7 +16,7 @@ template <class t> class LinkedListNode{
         }
 
         // take input linked list
-        static LinkedListNode<int>* inputOfLinkedListI(){
+        template <class t> static LinkedListNode<int>* inputOfLinkedListI(){
             int data;
             cin>>data;
             LinkedListNode<int> * head=NULL;
