@@ -27,3 +27,18 @@ so we do not have builtin data type for this so we will make our own data type
 ->linked list have size limitation which is limitation of hardware
 make input and print function as static class method
 ( we can also do a node class and a linked list class which will have methods and will only have head)
+
+if we create node in main function then we have to link in main as pointer will be destroyed it main only so pointer buddhi will not be applied
+
+for (;head!=NULL;){
+
+}
+
+is same as 
+while(head!=NULL){
+
+}
+
+learn head->address_of_next_node
+is same as (*head).address_of_next_node
+chaining (*((*head).address_of_next_node)).address_of_next_node

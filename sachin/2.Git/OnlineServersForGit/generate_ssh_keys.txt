@@ -1,0 +1,5 @@
+ssh-keygen -t rebase
+
+we can found key at
+
+c:/users/sachi/.ssh/

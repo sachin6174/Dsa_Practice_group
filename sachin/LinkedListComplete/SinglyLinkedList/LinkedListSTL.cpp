@@ -8,9 +8,12 @@ int main(){
     // it comes inside forward_list header file
     forward_list<int> mylist;
     mylist.assign(5,10);
+    /*
+    10->10->10->10->10
 
-    for (auto it=mylist.begin();it!=mylist.end();it++){
+    */
+    
+    for (auto it = mylist.begin(); it != mylist.end(); it++){
         cout<<*it<<" ";
     }
-
 }

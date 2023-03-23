@@ -1,0 +1,19 @@
+generating key :
+gpg --full-generate-key   (short cmd -> gpg --gen-key)
+
+
+
+
+
+The default location for GPG key files is a hidden directory called .gnupg in your home directory.
+
+The exact path to this directory depends on your operating system:
+
+On Windows: C:\Users\<username>\AppData\Roaming\gnupg
+On macOS and Linux: /home/<username>/.gnupg
+Within the .gnupg directory, you should see several files related to your GPG keys, including:
+
+pubring.kbx: Your public keyring file.
+secring.kbx: Your secret keyring file.
+trustdb.gpg: A file containing trusted keys.
+Keep in mind that the .gnupg directory and its contents are sensitive and should be protected from unauthorized access. Make sure to back up your key files regularly to prevent loss of data.
