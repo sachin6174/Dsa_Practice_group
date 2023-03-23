@@ -8,3 +8,7 @@ git branch new-branch-name from-which-branch
 git checkout branch-name    (to change the branch)
 
 git branch -d branch-name
+
+
+to push to specific branch (  git push origin name-of-branch)
+( git push -u origin name-of-branch)  // now it will make by push brach as sachin for default
