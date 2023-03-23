@@ -1,0 +1,20 @@
+To set the path for an app in Linux, you can follow these steps:
+
+Determine the directory where the app is installed.
+
+Open your terminal and type the following command to edit the .bashrc file: nano ~/.bashrc
+
+If you want to set the path for all users, open the file /etc/profile instead.-> it is a file open with v
+
+Scroll down to the end of the file and add the following line:
+
+export PATH=$PATH:/path/to/directory
+Replace "/path/to/directory" with the actual directory where the app is installed.
+
+Save the changes by pressing "Ctrl + X", then "Y", and finally "Enter".
+
+To apply the changes, either log out and log back in or type the following command in your terminal: source ~/.bashrc.
+
+Verify that the path has been correctly set by typing the name of the app in the terminal. If it launches without any errors, the path has been set successfully.
+
+Note: If the app requires additional libraries or dependencies, you may need to set the LD_LIBRARY_PATH environment variable as well. Follow the same process as above, but replace "PATH" with "LD_LIBRARY_PATH".

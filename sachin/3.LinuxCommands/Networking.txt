@@ -1,0 +1,23 @@
+Here are some commonly used Linux commands for networking:
+
+ifconfig: Displays information about network interfaces, including IP address, MAC address, and network settings.
+
+ip: Similar to ifconfig, but with more advanced features such as routing tables, network namespaces, and network device configuration.
+
+route: Displays the system's routing table, which determines how network traffic is directed.
+
+ping: Sends an ICMP echo request to a specified IP address or hostname to test connectivity.
+
+traceroute: Displays the path that network traffic takes from one host to another, including any network hops along the way.
+
+netstat: Displays active network connections, open ports, and other network-related statistics.
+
+tcpdump: Captures and displays network traffic in real-time.
+
+ss: Provides detailed information on TCP and UDP sockets and network connections.
+
+nc: A simple utility for sending and receiving data over TCP or UDP connections.
+
+wget: Downloads files from the Internet using HTTP, HTTPS, or FTP protocols.
+
+These are just a few of the many networking commands available in Linux. Depending on your needs and specific networking setup, there may be others that are more useful to you.

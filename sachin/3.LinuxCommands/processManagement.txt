@@ -1,0 +1,23 @@
+Here are some commonly used Linux commands for process management:
+
+ps: Displays information about running processes on the system, including their PID (Process ID), CPU and memory usage, and other details.
+
+top: Provides an interactive view of system processes in real-time, with the ability to sort by different metrics and send signals to selected processes.
+
+kill: Sends a signal to a specified process, which can be used to terminate or modify its behavior.
+
+pkill: Similar to kill, but allows you to specify a process by name rather than PID.
+
+pgrep: Searches for processes by name or other criteria and returns their PIDs.
+
+nice: Sets the priority level of a process, which determines how much CPU time it is allocated.
+
+renice: Changes the priority level of an already-running process.
+
+htop: Similar to top, but provides a more user-friendly interface with color-coded displays and mouse support.
+
+pstree: Displays a tree-like overview of all running processes, showing their relationships and parent-child dependencies.
+
+systemctl: A command-line tool for controlling system services, allowing you to start, stop, restart, enable, or disable them as needed.
+
+These are just a few examples of process management commands in Linux. Depending on your needs and specific use case, there may be others that are more useful to you.

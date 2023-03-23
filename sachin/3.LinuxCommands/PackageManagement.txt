@@ -1,0 +1,17 @@
+There are several Linux commands for package management, depending on the distribution being used. Here are some of the most common ones:
+
+apt-get: This command is used to manage packages in Ubuntu and Debian-based distributions. It can be used to install, remove, update, and upgrade packages.
+
+dpkg: This command is used to install individual .deb packages in Debian-based distributions. It can also be used to query the status of installed packages.
+
+yum: This command is used to manage packages in Red Hat-based distributions, such as CentOS and Fedora. It can be used to install, remove, update, and upgrade packages.
+
+rpm: This command is used to install individual .rpm packages in Red Hat-based distributions. It can also be used to query the status of installed packages.
+
+pacman: This command is used to manage packages in Arch Linux and its derivatives. It can be used to install, remove, update, and upgrade packages.
+
+zypper: This command is used to manage packages in SUSE Linux and its derivatives. It can be used to install, remove, update, and upgrade packages.
+
+portage/emerge: These commands are used to manage packages in Gentoo Linux. They can be used to install, remove, update, and upgrade packages.
+
+Note that some distributions may have additional package management tools or may use a combination of these commands.

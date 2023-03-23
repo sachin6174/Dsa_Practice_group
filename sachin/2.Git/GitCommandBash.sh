@@ -39,3 +39,4 @@ git remote add  link // to link with remote repo
 git push -u origin master   //heer u stand for upstreAM  and used to set default branch where we want to push and ater making default we can only run git push to do so
 //
 tell about gitignore  and basics of linux
+

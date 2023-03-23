@@ -1,0 +1,15 @@
+ls - List the files and directories in the current directory
+cd - Change the current working directory
+pwd - Print the current working directory
+mkdir - Create a new directory
+touch - Create a new, empty file or update the timestamp of an existing file
+cp - Copy files or directories from one location to another
+mv - Move or rename files or directories
+rm - Delete files or directories
+cat - Concatenate and display the contents of one or more files
+less - Display the contents of a file one page at a time
+head - Display the first few lines of a file
+tail - Display the last few lines of a file
+chmod - Modify the permissions of a file or directory
+chown - Change the owner of a file or directory
+tar - Create or extract a compressed archive of files and directories

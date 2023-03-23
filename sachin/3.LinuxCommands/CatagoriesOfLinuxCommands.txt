@@ -1,0 +1,15 @@
+There are several broad categories of Linux commands:
+
+File Management Commands: These commands are used to create, modify, delete and manipulate files and directories on the Linux system. Examples include cp, mv, rm, mkdir, rmdir, ls, touch, chmod, chown, and chgrp.
+
+System Administration Commands: These commands are used to manage the Linux system itself. Examples include systemctl, service, top, ps, kill, useradd, passwd, date, reboot, shutdown, and hostname.
+
+Network Commands: These commands are used to manage network interfaces, connections, and communication on the Linux system. Examples include ping, ifconfig, ip, route, netstat, ssh, ftp, curl, wget, and dig.
+
+Process Management Commands: These commands are used to monitor and control running processes on the Linux system. Examples include ps, top, kill, nice, renice, and nohup.
+
+Text Processing Commands: These commands are used to process text and data on the Linux system. Examples include cat, grep, sed, awk, sort, uniq, cut, paste, head, tail, and tr.
+
+User Environment Commands: These commands are used to customize the user environment on the Linux system. Examples include alias, export, source, history, echo, and printenv.
+
+Package Management Commands: These commands are used to manage software packages on the Linux system. Examples include apt-get, yum, rpm, dpkg, and pacman.

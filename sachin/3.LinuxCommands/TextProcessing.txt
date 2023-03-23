@@ -1,0 +1,23 @@
+There are many Linux commands for text processing, but here are some of the most commonly used ones:
+
+awk - A powerful programming language that allows you to manipulate and process text files.
+
+sed - A stream editor that can perform search and replace operations on text files.
+
+grep - A tool that searches for a specific pattern in a file or set of files.
+
+cut - A command that extracts specific columns or fields from a file.
+
+sort - A command that sorts lines of text alphabetically or numerically.
+
+tr - A command that translates or deletes characters from a text file.
+
+wc - A command that counts the number of lines, words, and characters in a file.
+
+head - A command that displays the first few lines of a text file.
+
+tail - A command that displays the last few lines of a text file.
+
+uniq - A command that removes duplicate lines from a sorted file.
+
+These are just a few examples of the many text processing commands available in Linux.

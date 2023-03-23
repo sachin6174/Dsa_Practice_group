@@ -1,0 +1,27 @@
+Here are some commonly used Linux commands for system administration:
+
+top - A command that displays real-time information about the system's CPU usage, memory usage, and processes.
+
+ps - A command that displays information about the currently running processes on the system.
+
+systemctl - A command that is used to control and manage services in the system.
+
+ifconfig - A command that displays information about network interfaces on the system.
+
+netstat - A command that displays information about network connections and network statistics.
+
+ping - A command that sends packets to a specified network host or IP address to test connectivity.
+
+traceroute - A command that shows the path a packet takes across a network and measures the time it takes to reach each hop.
+
+ssh - A command that allows you to securely connect to a remote system over a network.
+
+sudo - A command that allows users with appropriate permissions to perform administrative tasks.
+
+fdisk - A command-line utility that is used to create, delete, and modify partitions on hard drives.
+
+These are just a few examples of the many system administration commands available in Linux. There are many more commands available depending on your specific needs and requirements.
+
+
+
+
