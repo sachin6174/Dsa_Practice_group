@@ -66,3 +66,38 @@ extras:
          use stl of ll
         
 
+In addition to the question on reversing a linked list, there are several other important linked list questions you may encounter in coding interviews:
+
+How do you find the middle element of a linked list?
+How do you detect if a linked list has a cycle?
+How do you merge two sorted linked lists into a single sorted list?
+How do you remove duplicates from a sorted linked list?
+
+def reverse_linked_list(head):
+    prev = None
+    curr = head
+    while curr:
+        next = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next
+    return prev
+
+
+    Sure, here are some important linked list interview questions:
+
+What is a linked list, and what are the different types of linked lists?
+How do you insert a node at the beginning of a linked list?
+How do you insert a node at the end of a linked list?
+How do you delete a node from a linked list?
+What is the difference between a singly linked list and a doubly linked list?
+How do you reverse a linked list?
+How do you find the middle node of a linked list?
+How do you detect if a linked list has a cycle or loop in it?
+How do you merge two sorted linked lists into one sorted linked list?
+How do you remove duplicates from a linked list?
+These questions cover some of the fundamental concepts in linked list data structures and should give you a good foundation for tackling more advanced questions related to linked lists.
+
+
+
+

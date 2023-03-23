@@ -42,3 +42,6 @@ while(head!=NULL){
 learn head->address_of_next_node
 is same as (*head).address_of_next_node
 chaining (*((*head).address_of_next_node)).address_of_next_node
+
+
+https://leetcode.com/tag/linked-list

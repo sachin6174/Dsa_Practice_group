@@ -12,3 +12,12 @@ git branch -d branch-name
 
 to push to specific branch (  git push origin name-of-branch)
 ( git push -u origin name-of-branch)  // now it will make by push brach as sachin for default
+
+to check if repo is linked with server (and will give link) :
+    git remote -v
+
+ git config pull.rebase true // to help with pull and merging content
+
+ git branch   -> to check curent working branch
+
+ 
