@@ -1,0 +1,5 @@
+git branch -a// for listing all the branchnames
+git branch branch-name //to make copy of branch
+git checkout branchname//to get into another branch
+git branch -d branchname//to delete branch
+git remote -v// to check if it is linked with github server
