@@ -1,4 +1,5 @@
-./vscode
+/.vscode
 *.exe
 *.class
 .DS_Store
+*.out

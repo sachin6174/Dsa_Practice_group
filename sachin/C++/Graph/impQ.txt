@@ -1,0 +1,20 @@
+1. vertex and edges and weight directed
+eg road network
+    computer lan wires
+
+path to go from one vertex to other true or false
+print all path frm vertex a to b
+print the smallest path in terms of edges ()
+print the smallest path in terms of weight (Dijistra)
+minimm wire to connect all computer in a lan (mst)
+order of compilation in a transitive dependency
+
+represenation
+    Adjecency Matrix (vertice less then 100000)
+    Adjacency List
+
+
+
+
+
+
